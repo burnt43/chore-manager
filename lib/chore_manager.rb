@@ -3,7 +3,7 @@ module ChoreManager
 
   class << self
     def database_configurations
-      {environment => config['database']}
+      {environment.to_s => config['database']}
     end
   end
 end

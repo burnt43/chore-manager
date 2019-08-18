@@ -4,6 +4,7 @@ require 'bundler/setup'
 require 'ruby-lazy-config'
 require 'ruby-lazy-const'
 require 'active_record'
+require 'mini_record'
 
 require 'pathname'
 
