@@ -3,6 +3,7 @@ require 'bundler/setup'
 
 require 'ruby-lazy-config'
 require 'ruby-lazy-const'
+require 'cli-builder'
 require 'active_record'
 require 'mini_record'
 

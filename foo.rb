@@ -1,6 +1,13 @@
+#!/usr/local/ruby/ruby-2.5.3/bin/ruby -I ./lib
+
 require 'initialize'
 
 ChoreManager::Chore.auto_upgrade!
-ChoreManager::Chore.create(foobar: 'test_0001')
-puts ChoreManager::Chore.pluck(:foobar).to_s
-puts 'hello, world!'
+
+cli = CliBuilder::Prompt.new(prompt_string: 'chore-manager%')
+
+cli.register_command(:'list-chores') do |result|
+  puts result
+end
+
+cli.run
