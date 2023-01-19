@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'activerecord', '=4.2.9'
+gem 'activerecord', '6.1.7.1'
 gem 'sqlite3', '~>1.3.6'
 gem 'mini_record'
 gem 'ruby-lazy-const', :git => 'https://github.com/burnt43/ruby-lazy-const.git'
